@@ -11,7 +11,8 @@
           flex-direction: column;
   background-image: url("../../images/desktop/image-header.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 
 .header__navbar {
@@ -63,6 +64,73 @@
   letter-spacing: 6px;
 }
 
+.container--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container--flex .egg,
+.container--flex .cup,
+.container--flex .fruits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container--flex .egg .text,
+.container--flex .cup .text,
+.container--flex .fruits .text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container--flex .egg .text,
+.container--flex .egg .image,
+.container--flex .egg #cherry,
+.container--flex .egg #orange,
+.container--flex .cup .text,
+.container--flex .cup .image,
+.container--flex .cup #cherry,
+.container--flex .cup #orange,
+.container--flex .fruits .text,
+.container--flex .fruits .image,
+.container--flex .fruits #cherry,
+.container--flex .fruits #orange {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 200px;
+          flex: 1 0 200px;
+}
+
+.container--flex .egg .image img,
+.container--flex .cup .image img,
+.container--flex .fruits .image img {
+  height: 100%;
+  width: 100%;
+}
+
+.fruits img {
+  z-index: -1;
+}
+
+.fruits__text {
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    height: 50vh;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -74,7 +142,9 @@ body p {
   font-family: "Barlow", sans-serif;
 }
 
-body h1, body h2, body h3 {
-  font-family: 'Fraunces', serif;
+body h1,
+body h2,
+body h3 {
+  font-family: "Fraunces", serif;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,37 @@
+.container--flex {
+  display: flex;
+  flex-direction: column;
+
+  .egg,
+  .cup,
+  .fruits {
+    display: flex;
+    justify-content: center;
+
+    .text {
+      align-self: center;
+    }
+
+    .text,
+    .image,
+    #cherry,
+    #orange {
+      flex: 1 0 200px;
+    }
+    .image {
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.fruits {
+  img {
+    z-index: -1;
+  }
+  &__text {
+    text-align: center;
+  }
+}
