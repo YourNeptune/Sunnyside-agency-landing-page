@@ -1,5 +1,5 @@
 .header {
-height:100vh;
+  height: 100vh;
   color: white;
   display: flex;
   flex-direction: column;
@@ -38,15 +38,15 @@ height:100vh;
     }
   }
 
-  section{
-    text-align:center;
-    margin-top:60px;
+  section {
+    text-align: center;
+    margin-top: 60px;
 
-    h1{
-        font-size: 40px;
-        text-transform: uppercase;
-        margin-bottom:50px;
-        letter-spacing: 6px;
+    h1 {
+      font-size: 40px;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+      letter-spacing: 6px;
     }
   }
 }

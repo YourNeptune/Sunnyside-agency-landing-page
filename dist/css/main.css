@@ -99,13 +99,22 @@
 .container--flex .fruits .text h2 {
   font-size: 35px;
   padding-right: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .container--flex .egg .text p,
 .container--flex .cup .text p,
 .container--flex .fruits .text p {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+.container--flex .egg .text a,
+.container--flex .cup .text a,
+.container--flex .fruits .text a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 .container--flex .egg .text,
@@ -162,6 +171,16 @@
   font-size: 18px;
   color: #19536b;
   line-height: 1.5;
+}
+
+.egg a {
+  border-bottom: 8px solid rgba(254, 212, 0, 0.4);
+  border-radius: 5px;
+}
+
+.cup a {
+  border-bottom: 8px solid rgba(255, 109, 96, 0.4);
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 1200px) {
