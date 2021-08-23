@@ -10,6 +10,16 @@
 
     .text {
       align-self: center;
+      padding: 0 100px;
+
+      h2 {
+        font-size: 35px;
+        padding-right: 60px;
+        margin-bottom: 30px;
+      }
+      p {
+        margin-bottom: 30px;
+      }
     }
 
     .text,
@@ -27,11 +37,33 @@
   }
 }
 
-.fruits {
-  img {
-    z-index: -1;
+#cherry,
+#orange {
+  position: relative;
+  .image {
+    img {
+      z-index: -1;
+    }
   }
-  &__text {
+  .fruits__text {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    padding: 100px 130px;
     text-align: center;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.text,
+.fruits__text {
+  p {
+    font-size: 18px;
+    color: hsl(198, 62%, 26%);
+    line-height: 1.5;
   }
 }

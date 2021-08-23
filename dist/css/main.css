@@ -91,6 +91,21 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  padding: 0 100px;
+}
+
+.container--flex .egg .text h2,
+.container--flex .cup .text h2,
+.container--flex .fruits .text h2 {
+  font-size: 35px;
+  padding-right: 60px;
+  margin-bottom: 30px;
+}
+
+.container--flex .egg .text p,
+.container--flex .cup .text p,
+.container--flex .fruits .text p {
+  margin-bottom: 30px;
 }
 
 .container--flex .egg .text,
@@ -117,17 +132,44 @@
   width: 100%;
 }
 
-.fruits img {
+#cherry,
+#orange {
+  position: relative;
+}
+
+#cherry .image img,
+#orange .image img {
   z-index: -1;
 }
 
-.fruits__text {
+#cherry .fruits__text,
+#orange .fruits__text {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  right: 0;
+  padding: 100px 130px;
   text-align: center;
 }
 
-@media screen and (max-width: 1000px) {
+#cherry .fruits__text h2,
+#orange .fruits__text h2 {
+  margin-bottom: 20px;
+}
+
+.text p,
+.fruits__text p {
+  font-size: 18px;
+  color: #19536b;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 1200px) {
   .header {
     height: 50vh;
+  }
+  #cherry .fruits__text, #orange .fruits__text {
+    padding: 50px 70px;
   }
 }
 
