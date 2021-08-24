@@ -232,6 +232,7 @@
 .clientsContainer .clients .client p {
   color: #19536b;
   padding: 0 20px;
+  line-height: 1.5;
 }
 
 .clientsContainer .clients .client img {
@@ -241,6 +242,9 @@
 
 .clientsContainer .clients .client__name p {
   color: #a7abae;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 10px;
 }
 
 @media screen and (max-width: 1200px) {

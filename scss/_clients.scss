@@ -26,6 +26,7 @@
       p{
            color: hsl(198, 62%, 26%);
            padding:0 20px;
+           line-height: 1.5;
       }
 
       img {
@@ -36,6 +37,9 @@
       &__name{
           p{
               color:hsl(210, 4%, 67%);
+              font-size:13px;
+              font-weight: bold;
+              margin: 10px;
           }
       }
     }
