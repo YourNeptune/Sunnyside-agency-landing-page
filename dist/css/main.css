@@ -183,6 +183,66 @@
   border-radius: 5px;
 }
 
+.clientsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 100vh;
+  padding: 100px;
+}
+
+.clientsContainer h2 {
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: #a7abae;
+}
+
+.clientsContainer .clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.clientsContainer .clients .client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clientsContainer .clients .client p {
+  color: #19536b;
+  padding: 0 20px;
+}
+
+.clientsContainer .clients .client img {
+  border-radius: 50%;
+  height: 20%;
+}
+
+.clientsContainer .clients .client__name p {
+  color: #a7abae;
+}
+
 @media screen and (max-width: 1200px) {
   .header {
     height: 50vh;
