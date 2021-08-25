@@ -323,12 +323,144 @@ footer .attribution a {
   color: white;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   .header {
-    height: 50vh;
+    height: 70vh;
   }
-  #cherry .fruits__text, #orange .fruits__text {
+  .header__arrow {
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #cherry .fruits__text,
+  #orange .fruits__text {
     padding: 50px 70px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container--flex .text {
+    padding: 50px !important;
+  }
+  .container--flex .text h2 {
+    font-size: 30px !important;
+  }
+  .container--flex .text p {
+    font-size: 15px;
+  }
+  #cherry .fruits__text,
+  #orange .fruits__text {
+    padding: 10px 30px !important;
+  }
+  #cherry .fruits__text p,
+  #orange .fruits__text p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header h1 {
+    font-size: 30px !important;
+  }
+  .header__arrow {
+    height: 60px;
+  }
+  #cherry .fruits__text,
+  #orange .fruits__text {
+    padding: 0 20px !important;
+    top: 170px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    height: 100vh;
+  }
+  .header h1 {
+    padding: 0 20px;
+  }
+  .header__navbar__menu {
+    display: none;
+  }
+  .container--flex .egg {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .container--flex .cup,
+  .container--flex .fruits {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container--flex #cherry .image img,
+  .container--flex #orange .image img {
+    height: 100%;
+  }
+  .container--flex #cherry .fruits__text,
+  .container--flex #orange .fruits__text {
+    top: 300px;
+  }
+  .container--flex #cherry .fruits__text h2,
+  .container--flex #orange .fruits__text h2 {
+    font-size: 27px;
+  }
+  .container--flex #cherry .fruits__text p,
+  .container--flex #orange .fruits__text p {
+    padding: 20px 40px;
+  }
+  .container--flex .text {
+    padding: 40px !important;
+  }
+  .container--flex .text h2 {
+    font-size: 25px !important;
+    padding-right: 40px !important;
+  }
+  .clientsContainer {
+    height: 100%;
+    padding: 100px 20px;
+  }
+  .clientsContainer h2 {
+    font-size: 15px !important;
+    letter-spacing: 2px;
+  }
+  .clientsContainer .clients {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .fruits__text {
+    top: 200px !important;
+  }
+  .fruits__text h2 {
+    font-size: 20px;
+  }
+  .fruits__text p {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .fruits__text {
+    top: 180px !important;
+  }
+  .fruits__text h2 {
+    font-size: 15px;
+    margin-bottom: 0 !important;
+  }
+  .fruits__text p {
+    padding: 0 30px;
+  }
+  .text p,
+  .fruits__text p {
+    font-size: 13px !important;
   }
 }
 

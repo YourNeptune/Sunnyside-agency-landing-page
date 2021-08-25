@@ -1,12 +1,156 @@
-@include media-medium {
+@include media-medium-header {
   .header {
-    height: 50vh;
+    height: 70vh;
+    &__arrow {
+      height: 70px;
+    }
+  }
+}
+
+@include media-medium-cherry_orange {
+  #cherry,
+  #orange {
+    .fruits__text {
+      padding: 50px 70px;
+    }
+  }
+}
+
+@include media-small-sixFlexboxContainer {
+  .container--flex {
+    .text {
+      padding: 50px !important;
+      h2 {
+        font-size: 30px !important;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
   }
 
-   
-  #cherry,#orange{
-    .fruits__text{
-      padding:50px 70px;
+  #cherry,
+  #orange {
+    .fruits__text {
+      padding: 10px 30px !important;
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@include media-small_800px {
+  .header {
+    h1 {
+      font-size: 30px !important;
+    }
+    &__arrow {
+      height: 60px;
+    }
+  }
+
+  #cherry,
+  #orange {
+    .fruits__text {
+      padding: 0 20px !important;
+      top: 170px;
+    }
+  }
+}
+
+@include media-mobile_700px {
+  //header:
+  .header {
+    height: 100vh;
+    h1 {
+      padding: 0 20px;
+    }
+    &__navbar {
+      &__menu {
+        display: none;
+      }
+    }
+  }
+
+  //6 flexboxes:
+  .container--flex {
+    .egg {
+      flex-direction: column-reverse;
+    }
+    .cup,
+    .fruits {
+      flex-direction: column;
+    }
+
+    #cherry,
+    #orange {
+      .image img {
+        height: 100%;
+      }
+      .fruits__text {
+        top: 300px;
+        h2 {
+          font-size: 27px;
+        }
+        p {
+          padding: 20px 40px;
+        }
+      }
+    }
+
+    .text {
+      padding: 40px !important;
+      h2 {
+        font-size: 25px !important;
+        padding-right: 40px !important;
+      }
+    }
+  }
+
+  //Clients:
+  .clientsContainer {
+    height: 100%;
+    padding: 100px 20px;
+
+    h2 {
+      font-size: 15px !important;
+      letter-spacing: 2px;
+    }
+    .clients {
+      flex-direction: column;
+    }
+  }
+}
+
+@include media-mobile_550px {
+  .fruits__text {
+    top: 200px !important;
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      padding: 0 30px;
+    }
+  }
+}
+
+@include media-mobile_420px {
+  .fruits__text {
+    top: 180px !important;
+    h2 {
+      font-size: 15px;
+      margin-bottom: 0 !important;
+    }
+    p {
+      padding: 0 30px;
+    }
+  }
+
+  .text,
+  .fruits__text {
+    p {
+      font-size: 13px !important;
     }
   }
 }
