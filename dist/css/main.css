@@ -399,6 +399,8 @@ footer .attribution a {
   .container--flex #cherry .image img,
   .container--flex #orange .image img {
     height: 100%;
+    width: 100%;
+    display: block;
   }
   .container--flex #cherry .fruits__text,
   .container--flex #orange .fruits__text {
