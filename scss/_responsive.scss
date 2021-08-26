@@ -121,6 +121,12 @@
     }
     .clients {
       flex-direction: column;
+      .client{
+        img{
+          height:80px;
+        }
+        
+      }
     }
   }
 }

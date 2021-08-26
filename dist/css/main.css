@@ -435,6 +435,9 @@ footer .attribution a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .clientsContainer .clients .client img {
+    height: 80px;
+  }
 }
 
 @media screen and (max-width: 550px) {
