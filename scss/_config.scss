@@ -11,7 +11,7 @@
 }
 
 @mixin media-small-sixFlexboxContainer{
-    @media screen and (max-width:1000px) {
+    @media screen and (max-width:1100px) {
         @content;
     }
 }
@@ -23,7 +23,7 @@
 }
 
 @mixin media-mobile_700px{
-    @media screen and (max-width:700px) {
+    @media screen and (max-width:720px) {
         @content;
     }
 }
