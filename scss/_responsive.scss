@@ -102,7 +102,7 @@
     }
 
     .text {
-      padding: 40px !important;
+      padding: 7em 5em !important;
       h2 {
         font-size: 25px !important;
         padding-right: 40px !important;
@@ -121,23 +121,30 @@
     }
     .clients {
       flex-direction: column;
-      .client{
-        img{
-          height:80px;
+      .client {
+        margin-bottom: 40px;
+        img {
+          height: 80px;
+        }
+        p {
+          font-size: 13px;
+          padding: 0 50px;
+          margin: 20px 0;
         }
 
+        &__name {
+          p {
+            margin: 5px;
+            font-size: 10px;
+          }
+        }
       }
     }
   }
 
   //Four Flexboxes:
-  .fourFlexbox{
-      flex-direction: column;
-
-      .milk_orange_box div,.cone_sugar_box div{
-        // height:50%;
-      }
-     
+  .fourFlexbox {
+    flex-direction: column;
   }
 }
 
@@ -155,7 +162,7 @@
 
 @include media-mobile_420px {
   .fruits__text {
-    top: 180px !important;
+    top: 160px !important;
     h2 {
       font-size: 15px;
       margin-bottom: 0 !important;
@@ -169,6 +176,20 @@
   .fruits__text {
     p {
       font-size: 13px !important;
+    }
+  }
+
+  footer {
+    .title {
+      font-size: 25px;
+    }
+    .links {
+      p {
+        font-size: 13px;
+      }
+    }
+    .attribution {
+      font-size: 13px;
     }
   }
 }

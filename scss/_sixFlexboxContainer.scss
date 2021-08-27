@@ -6,19 +6,17 @@
   .cup,
   .fruits {
     display: flex;
-    justify-content: center;
 
     .text {
       align-self: center;
-      padding: 0 100px;
+      padding: 0 80px;
 
       h2 {
         font-size: 35px;
-        padding-right: 60px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
       }
       p {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
       }
       a {
         text-transform: uppercase;
@@ -44,24 +42,26 @@
 }
 
 // id: cherry, orange
-#cherry,
-#orange {
-  position: relative;
-  .image {
-    img {
-      z-index: -1;
+.fruits {
+  #cherry,
+  #orange {
+    position: relative;
+    .image {
+      img {
+        z-index: -1;
+      }
     }
-  }
-  .fruits__text {
-    position: absolute;
-    top: 200px;
-    left: 0;
-    right: 0;
-    padding: 100px 130px;
-    text-align: center;
+    .fruits__text {
+      position: absolute;
+      top: 180px;
+      left: 0;
+      right: 0;
+      padding: 100px 130px;
+      text-align: center;
 
-    h2 {
-      margin-bottom: 20px;
+      h2 {
+        margin-bottom: 20px;
+      }
     }
   }
 }

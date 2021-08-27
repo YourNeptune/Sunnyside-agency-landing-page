@@ -80,9 +80,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .container--flex .egg .text,
@@ -91,21 +88,20 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding: 0 100px;
+  padding: 0 80px;
 }
 
 .container--flex .egg .text h2,
 .container--flex .cup .text h2,
 .container--flex .fruits .text h2 {
   font-size: 35px;
-  padding-right: 60px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .container--flex .egg .text p,
 .container--flex .cup .text p,
 .container--flex .fruits .text p {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .container--flex .egg .text a,
@@ -141,28 +137,28 @@
   width: 100%;
 }
 
-#cherry,
-#orange {
+.fruits #cherry,
+.fruits #orange {
   position: relative;
 }
 
-#cherry .image img,
-#orange .image img {
+.fruits #cherry .image img,
+.fruits #orange .image img {
   z-index: -1;
 }
 
-#cherry .fruits__text,
-#orange .fruits__text {
+.fruits #cherry .fruits__text,
+.fruits #orange .fruits__text {
   position: absolute;
-  top: 200px;
+  top: 180px;
   left: 0;
   right: 0;
   padding: 100px 130px;
   text-align: center;
 }
 
-#cherry .fruits__text h2,
-#orange .fruits__text h2 {
+.fruits #cherry .fruits__text h2,
+.fruits #orange .fruits__text h2 {
   margin-bottom: 20px;
 }
 
@@ -336,7 +332,8 @@ footer .attribution {
 
 footer .attribution a {
   text-decoration: none;
-  color: white;
+  color: #25564b;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1000px) {
@@ -431,7 +428,7 @@ footer .attribution a {
     padding: 20px 40px;
   }
   .container--flex .text {
-    padding: 40px !important;
+    padding: 7em 5em !important;
   }
   .container--flex .text h2 {
     font-size: 25px !important;
@@ -451,8 +448,20 @@ footer .attribution a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .clientsContainer .clients .client {
+    margin-bottom: 40px;
+  }
   .clientsContainer .clients .client img {
     height: 80px;
+  }
+  .clientsContainer .clients .client p {
+    font-size: 13px;
+    padding: 0 50px;
+    margin: 20px 0;
+  }
+  .clientsContainer .clients .client__name p {
+    margin: 5px;
+    font-size: 10px;
   }
   .fourFlexbox {
     -webkit-box-orient: vertical;
@@ -476,7 +485,7 @@ footer .attribution a {
 
 @media screen and (max-width: 420px) {
   .fruits__text {
-    top: 180px !important;
+    top: 160px !important;
   }
   .fruits__text h2 {
     font-size: 15px;
@@ -488,6 +497,15 @@ footer .attribution a {
   .text p,
   .fruits__text p {
     font-size: 13px !important;
+  }
+  footer .title {
+    font-size: 25px;
+  }
+  footer .links p {
+    font-size: 13px;
+  }
+  footer .attribution {
+    font-size: 13px;
   }
 }
 
