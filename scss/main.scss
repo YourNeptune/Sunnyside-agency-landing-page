@@ -5,9 +5,8 @@
 @import "clients";
 @import "fourFlexboxContainer";
 @import "footer";
-@import 'config';
-@import 'responsive';
-
+@import "config";
+@import "responsive";
 
 * {
   margin: 0;
@@ -16,7 +15,8 @@
 }
 
 body {
-  p {
+  p,
+  a {
     font-family: "Barlow", sans-serif;
   }
   h1,

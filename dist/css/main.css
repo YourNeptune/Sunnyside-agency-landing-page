@@ -37,13 +37,15 @@
           align-items: center;
 }
 
-.header__navbar__menu p {
+.header__navbar__menu a {
+  text-decoration: none;
+  color: white;
   margin-left: 35px;
   cursor: pointer;
 }
 
 .header__navbar__menu--btn {
-  color: black;
+  color: black !important;
   background-color: white;
   padding: 8px 20px;
   border-radius: 20px;
@@ -516,7 +518,8 @@ footer .attribution a {
           box-sizing: border-box;
 }
 
-body p {
+body p,
+body a {
   font-family: "Barlow", sans-serif;
 }
 
