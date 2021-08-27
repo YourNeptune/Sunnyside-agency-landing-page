@@ -1,9 +1,18 @@
-.fourFlexbox{
-    width:100vw;
+.fourFlexbox {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+
+  img {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  .milk_orange_box,
+  .cone_sugar_box {
     display: flex;
-    
-    img{
-        height:100%;
-        width:100%;
-    }
+    flex-direction: row;
+  }
 }

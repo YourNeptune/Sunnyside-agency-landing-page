@@ -125,9 +125,19 @@
         img{
           height:80px;
         }
-        
+
       }
     }
+  }
+
+  //Four Flexboxes:
+  .fourFlexbox{
+      flex-direction: column;
+
+      .milk_orange_box div,.cone_sugar_box div{
+        // height:50%;
+      }
+     
   }
 }
 
