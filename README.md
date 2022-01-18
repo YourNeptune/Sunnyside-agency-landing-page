@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/YourNeptune/Sunnyside-agency-landing-page)
-- Live Site URL: [Add live site URL here](https://yourneptune.github.io/Sunnyside-agency-landing-page/)
+- Solution URL: [Click Here](https://github.com/YourNeptune/Sunnyside-agency-landing-page)
+- Live Site URL: [Click Here](https://yourneptune.github.io/Sunnyside-agency-landing-page/)
 
 ## My process
 
